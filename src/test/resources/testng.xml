@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+        <suite name="Authentication suite" verbose="1" thread-count="1" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="com.abn.utils.TestNGExecutionListener"></listener>
+    </listeners>
+    <test name="Login tests" annotations="JDK" preserve-order="true">
+        <classes>
+            <class name="com.abn.runner.RunCukesByLoginFeature"/>
+        </classes>
+    </test>
+
+    <test name="Login1 tests" annotations="JDK" preserve-order="true">
+        <classes>
+            <class name="com.abn.runner.RunCukesByLogin1feature"/>
+        </classes>
+    </test>
+</suite>
